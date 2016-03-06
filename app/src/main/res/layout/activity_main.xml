@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.monty.demo.openfiredemo.MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="账号："
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="29dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请输入账号"
+        android:id="@+id/edtLoginID"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtPwd"
+        android:hint="请输入密码"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/edtLoginID"
+        android:layout_alignStart="@+id/edtLoginID"
+        android:layout_alignRight="@+id/edtLoginID"
+        android:layout_alignEnd="@+id/edtLoginID" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密码："
+        android:id="@+id/textView2"
+        android:layout_below="@+id/edtLoginID"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="连接服务器"
+        android:id="@+id/btnConnection"
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/edtPwd"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户注册"
+        android:id="@+id/btnRegister"
+        android:layout_below="@+id/btnConnection"
+        android:layout_alignLeft="@+id/edtPwd"
+        android:layout_alignStart="@+id/edtPwd" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:id="@+id/btnLogin"
+        android:layout_alignTop="@+id/btnRegister"
+        android:layout_toRightOf="@+id/btnRegister"
+        android:layout_toEndOf="@+id/btnRegister" />
+</RelativeLayout>
